@@ -1,11 +1,9 @@
 ```
 cd [working directory]
 git clone https://github.com/XaviP/recording_matcher_frontend.git
+cd recording_matcher_frontend
 npm install
-# serve with hot reload at localhost:8080
 npm run dev
-# build for production with minification
-npm run build
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
+
+And visit http://localhost:8080 in your browser.
