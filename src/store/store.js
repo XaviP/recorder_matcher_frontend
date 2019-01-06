@@ -21,6 +21,10 @@ export default new Vuex.Store({
   mutations: {
     SET_INPUTS (state, inputs) {
       state.inputs = inputs
+    },
+    DELETE_INPUT (state, id) {
+      var index = state.inputs.findIndex(input => input.id === id)
+      state.inputs.splice(index, 1)
     }
   }
 })

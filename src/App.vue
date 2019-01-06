@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <InputsList/>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <InputsList/>
+        </div>
+        <div class="col">
+          <CandidatesList/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import InputsList from './components/InputsList'
+import CandidatesList from './components/CandidatesList'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 export default {
   name: 'App',
   components: {
-    InputsList
+    InputsList,
+    CandidatesList
   }
 }
 </script>
